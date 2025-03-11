@@ -1,0 +1,19 @@
+manifest:
+  version: "0.13"
+
+  defaults:
+    remote: zephyrproject
+
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      path: zephyr
+      revision: v3.5.0  # Change to the Zephyr version you are using
+      import: true
+
+  self:
+    path: app
+
